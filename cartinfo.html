@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchasing...</title>
+    <link rel="stylesheet" href="cartinfo.css">
+    <script src="cartinfo.js"></script>
+</head>
+<body>
+    <div class="formcen">
+        <form>
+            <label for="Name">What is your name?</label><br>
+            <input type="text" id="Name" name="cusname" placeholder="Name" required><br>
+            <br>
+            <label for="Add">Please enter your address: </label><br>
+            <input type="text" id="Add" name="cusadd" placeholder="Address" required><br>
+            <br>
+            <fieldset>
+                <legend>Please choose type of delivery:</legend>
+                <label for="fast">Fast delivery</label>
+                <input type="radio" name="delipref" id="fast"><br>
+
+                <label for="saver">Saver delivery</label>
+                <input type="radio" name="delipref" id="saver"><br>
+
+                <label for="regular">Regular delivery</label>
+                <input type="radio" name="delipref" id="regular"><br>
+            </fieldset>
+
+
+            <br>
+            <label for="email">What is your email?</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+            <br><br>
+            <input type="submit" value="submit" onclick="submitForm()">
+        </form>
+    </div>
+</body>
+</html>

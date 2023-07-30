@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 110px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+/* Shop items */
+.smolcon {
+    text-align: center;
+    margin-bottom: 50px;
+    flex: 1;
+}
+
+.title {
+    margin-bottom: 80px;
+    line-height: 60px;
+    color: #555;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+
+.col4 img {
+    max-width: 100%;
+    height: 200px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.col4 p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+.col4 a.add-cart {
+    padding: 10px 20px;
+    display: block;
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+}
+
+.col4 a.add-cart:hover {
+    background-color: #333;
+}
+
+/* Footer */
+.footer {
+    background: black;
+    color: white;
+    font-size: 18px;
+    padding: 30px 0;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  .footer h3 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .footer ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .footer li {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #bbb;
+  }
+  
+  .copy {
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+.button{
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: ease-in 0.3s;
+}
+.button:hover{
+    background-color: #4CAF50;
+}
+.cart-section{
+    font-size: large;
+}
+#reset-cart-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large;
+    transition: ease-in 0.3s;
+}
+
+#reset-cart-btn:hover{
+    background-color: grey;
+}
+
+@media only screen and (max-width: 800px){
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col4{
+        flex-basis: 100%;
+    }
+}
